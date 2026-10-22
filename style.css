@@ -1,0 +1,148 @@
+:root {
+    --navy: #1B2A41;
+    --navy-gelap: #121D2E;
+    --gold: #C9A227;
+    --gold-terang: #E0C25A;
+    --krem: #F5F3EE;
+    --putih: #FFFFFF;
+    --teks: #2B2B2B;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--putih);
+    color: var(--teks);
+} 
+section {
+    scroll-margin-top: 70px;
+}
+.navbar {
+    background-color: var(--navy) !important;
+    border-bottom: 2px solid var(--gold);
+}
+.navbar .navbar-brand {
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    transition: color 0.2s ease;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--gold);
+}
+.jumbotron {
+    padding-top: 3rem;
+    background-color: var(--navy);
+    color: var(--putih);
+}
+.jumbotron h1 {
+    color: var(--putih);
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.jumbotron .lead {
+    color: var(--gold);
+    letter-spacing: 1px;
+}
+.jumbotron img {
+    border: 3px solid var(--gold);
+    background-color: var(--navy);
+}
+.jumbotron svg {
+    display: block;
+    width: 100%;
+}
+.jumbotron svg path {
+    fill: var(--putih);
+}
+.section-title {
+    color: var(--navy);
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--gold);
+}
+.bg-krem {
+    background-color: var(--krem);
+}
+.btn-gold {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--navy);
+    font-weight: 600;
+} 
+.btn-gold:hover {
+    background-color: var(--gold-terang);
+    border-color: var(--gold-terang);
+    color: var(--navy);
+}
+
+.btn-navy {
+    background-color: var(--navy);
+    border-color: var(--navy);
+    color: var(--putih);
+}
+.btn-navy:hover {
+    background-color: var(--navy-gelap);
+    border-color: var(--gold);
+    color: var(--gold);
+}
+.card {
+    border: 1px solid rgba(27, 42, 65, 0.1);
+    border-top: 3px solid var(--gold);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(27, 42, 65, 0.15);
+} 
+.card-title {
+    color: var(--navy);
+    font-weight: 600;
+}
+.form-control:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 0.2rem rgba(201, 162, 39, 0.25);
+}
+footer {
+    background-color: var(--navy);
+    color: rgba(255, 255, 255, 0.8);
+    border-top: 2px solid var(--gold);
+}
+footer a {
+    color: var(--gold);
+    text-decoration: none;
+}
+ 
+footer a:hover {
+    color: var(--gold-terang);
+}
+.skill-badge {
+    background-color: var(--navy);
+    color: var(--gold);
+    font-weight: 500;
+    padding: 0.55em 1em;
+    border-radius: 50rem;
+    border: 1px solid var(--gold);
+}
+
+.skill-heading {
+    color: var(--navy);
+    font-weight: 600;
+}
